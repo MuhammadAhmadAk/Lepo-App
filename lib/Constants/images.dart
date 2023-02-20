@@ -12,8 +12,8 @@ const icFilter = "assets/icons/filter.png";
 const icMedicalService = "assets/icons/Medical-service.png";
 const icConstruction = "assets/icons/construction.png";
 
-
-
 //Home Page image
 const imgWetFloor = "assets/images/wet-floor.png";
+const massageService = "assets/images/massage.jpg";
+
 

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lepo_project/Constants/colors.dart';
 import 'package:lepo_project/Constants/images.dart';
-import 'package:lepo_project/Dashboard/bottom_navbar.dart';
+import 'package:lepo_project/Dashboard/Pages/home_screen.dart';
+import 'package:lepo_project/Dashboard/persistent_bottom_nav.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,11 +15,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const NavBar(),
+            builder: (context) => const PersistentNavBar(),
           ));
     });
     super.initState();

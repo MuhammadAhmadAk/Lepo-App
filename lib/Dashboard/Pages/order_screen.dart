@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lepo_project/Constants/colors.dart';
 
 class OrderScreen extends StatefulWidget {
   const OrderScreen({super.key});
@@ -10,6 +11,8 @@ class OrderScreen extends StatefulWidget {
 class _OrderScreenState extends State<OrderScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.amber,
+    );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lepo_project/Dashboard/bottom_navbar.dart';
+import 'package:lepo_project/Dashboard/Components/searchfield.dart';
+import 'package:lepo_project/Dashboard/persistent_bottom_nav.dart';
 import 'package:lepo_project/Dashboard/splash_screen.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const PersistentNavBar(),
     );
   }
 }
