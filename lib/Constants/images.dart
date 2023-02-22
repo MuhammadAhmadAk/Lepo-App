@@ -15,5 +15,9 @@ const icConstruction = "assets/icons/construction.png";
 //Home Page image
 const imgWetFloor = "assets/images/wet-floor.png";
 const massageService = "assets/images/massage.jpg";
+const carService = "assets/images/carService.jpg";
+const cleaningService = "assets/images/cleaning-service.jpg";
+const refinishing = "assets/images/refinishig.jpg";
+
 
 

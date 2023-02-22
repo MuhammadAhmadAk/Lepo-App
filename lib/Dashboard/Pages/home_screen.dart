@@ -6,6 +6,7 @@ import 'package:lepo_project/Constants/images.dart';
 import 'package:lepo_project/Dashboard/Components/Services_categpries.dart';
 import 'package:lepo_project/Dashboard/Components/custom_button.dart';
 import 'package:lepo_project/Dashboard/Components/searchfield.dart';
+import 'package:lepo_project/Dashboard/Components/services.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -104,11 +105,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ),
                                         CustombuttonWidget(
                                           onPressed: () {},
-                                          child: Text("Book Now"),
                                           buttonHeight: h * 0.036,
                                           buttonWidth: w * 0.25,
                                           buttonborderRadius: 20,
                                           buttonBackgroundColor: Colors.black54,
+                                          child: const Text("Book Now"),
                                         ),
                                       ],
                                     ),
@@ -148,11 +149,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ),
                                         CustombuttonWidget(
                                           onPressed: () {},
-                                          child: Text("Book Now"),
                                           buttonHeight: h * 0.036,
                                           buttonWidth: w * 0.25,
                                           buttonborderRadius: 20,
                                           buttonBackgroundColor: Colors.black54,
+                                          child: const Text("Book Now"),
                                         ),
                                       ],
                                     ),
@@ -192,11 +193,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ),
                                         CustombuttonWidget(
                                           onPressed: () {},
-                                          child: Text("Book Now"),
                                           buttonHeight: h * 0.036,
                                           buttonWidth: w * 0.25,
                                           buttonborderRadius: 20,
                                           buttonBackgroundColor: Colors.black54,
+                                          child: const Text("Book Now"),
                                         ),
                                       ],
                                     ),
@@ -213,7 +214,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              Positioned(top: 240, right: 14, child: SearchFieldWidget()),
+              const Positioned(top: 240, right: 14, child: SearchFieldWidget()),
               SizedBox(
                 height: h * 0.01,
               ),
@@ -233,7 +234,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         SizedBox(
                           width: w * 0.03,
                         ),
-                        Text(
+                        const Text(
                           "Please Choose your Location",
                           style: TextStyle(fontSize: 14),
                         ),
@@ -255,27 +256,27 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Categories",
                       style:
                           TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
                     ),
                     CustombuttonWidget(
                       onPressed: () {},
-                      child: Text(
-                        "View all",
-                        style: TextStyle(fontSize: 12, color: Colors.black),
-                      ),
                       buttonBackgroundColor: Colors.white54,
                       buttonWidth: w * 0.22,
                       buttonHeight: h * 0.04,
                       buttonborderRadius: 20,
+                      child: const Text(
+                        "View all",
+                        style: TextStyle(fontSize: 12, color: Colors.black),
+                      ),
                     )
                   ],
                 ),
               ),
               Row(
-                children: [
+                children: const [
                   ServicesCategories(
                     imagePath: icCarService,
                     title: "Car Services",
@@ -293,47 +294,101 @@ class _HomeScreenState extends State<HomeScreen> {
 
               ///Servicesss
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Recommended for you",
                       style:
                           TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
                     ),
                     CustombuttonWidget(
                       onPressed: () {},
-                      child: Text(
-                        "View all",
-                        style: TextStyle(fontSize: 12, color: Colors.black),
-                      ),
                       buttonBackgroundColor: Colors.white54,
                       buttonWidth: w * 0.22,
                       buttonHeight: h * 0.04,
                       buttonborderRadius: 20,
+                      child: const Text(
+                        "View all",
+                        style: TextStyle(fontSize: 12, color: Colors.black),
+                      ),
                     )
                   ],
                 ),
               ),
 
-              Container(
-                height: h * 0.25,
-                width: w * 0.5,
-                color: appcolor,
-                child: Column(
+              Row(
+                children: const [
+                  ServicesWidget(
+                    imagePath: massageService,
+                    serviceTitle: "Massage Service",
+                    country: "Switxerland",
+                    name: "John",
+                    review: 300,
+                    rating: "4.5",
+                    price: 40.35,
+                  ),
+                  ServicesWidget(
+                    imagePath: carService,
+                    serviceTitle: "Cars Service",
+                    country: "Switxerland",
+                    name: "John",
+                    review: 300,
+                    rating: "4.5",
+                    price: 40.35,
+                  ),
+                ],
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: h * 0.2,
-                      width: w * 0.5,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              fit: BoxFit.fill,
-                              image: AssetImage(massageService))),
+                    const Text(
+                      "Car Service",
+                      style:
+                          TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
                     ),
+                    CustombuttonWidget(
+                      onPressed: () {},
+                      buttonBackgroundColor: Colors.white54,
+                      buttonWidth: w * 0.22,
+                      buttonHeight: h * 0.04,
+                      buttonborderRadius: 20,
+                      child: const Text(
+                        "View all",
+                        style: TextStyle(fontSize: 12, color: Colors.black),
+                      ),
+                    )
                   ],
                 ),
-              )
+              ),
+
+              Row(
+                children: const [
+                  ServicesWidget(
+                    imagePath: cleaningService,
+                    serviceTitle: "Desk Cleaning",
+                    country: "Switxerland",
+                    name: "John",
+                    review: 300,
+                    rating: "4.5",
+                    price: 40.35,
+                  ),
+                  ServicesWidget(
+                    imagePath: refinishing,
+                    serviceTitle: "refinishing",
+                    country: "Switxerland",
+                    name: "John",
+                    review: 300,
+                    rating: "4.5",
+                    price: 40.35,
+                  ),
+                ],
+              ),
             ],
           ),
         ],
