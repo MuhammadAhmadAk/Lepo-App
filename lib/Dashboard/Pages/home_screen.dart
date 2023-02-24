@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slider/carousel.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lepo_project/Constants/colors.dart';
 import 'package:lepo_project/Constants/images.dart';
 import 'package:lepo_project/Dashboard/Components/Services_categpries.dart';
@@ -211,12 +210,15 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ],
                         )),
+                    SizedBox(
+                      height: h * 0.02,
+                    ),
+                    SearchFieldWidget(),
                   ],
                 ),
               ),
-              const Positioned(top: 240, right: 14, child: SearchFieldWidget()),
               SizedBox(
-                height: h * 0.01,
+                height: h * 0.02,
               ),
               //locations
 

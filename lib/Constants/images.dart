@@ -11,6 +11,7 @@ const icProfile = "assets/icons/profile.png";
 const icFilter = "assets/icons/filter.png";
 const icMedicalService = "assets/icons/Medical-service.png";
 const icConstruction = "assets/icons/construction.png";
+const icClipPin = "assets/icons/clip.png";
 
 //Home Page image
 const imgWetFloor = "assets/images/wet-floor.png";
@@ -18,6 +19,5 @@ const massageService = "assets/images/massage.jpg";
 const carService = "assets/images/carService.jpg";
 const cleaningService = "assets/images/cleaning-service.jpg";
 const refinishing = "assets/images/refinishig.jpg";
-
-
+const profileImg = "assets/images/profileimage.jpg";
 

@@ -31,7 +31,7 @@ class CustombuttonWidget extends StatelessWidget {
     return Container(
         width: buttonWidth ?? 45,
         height: buttonHeight ?? 45,
-        margin: margin ?? EdgeInsets.all(8.0),
+        margin: margin ?? const EdgeInsets.all(8.0),
         child: ElevatedButton(
             onPressed: onPressed,
             style: ElevatedButton.styleFrom(
@@ -39,7 +39,7 @@ class CustombuttonWidget extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(buttonborderRadius??8.0),
                 ),
-                backgroundColor: buttonBackgroundColor ?? Color(0xff26A4FF)),
+                backgroundColor: buttonBackgroundColor ?? const Color(0xff26A4FF)),
             child: child
         )
     );

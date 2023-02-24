@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lepo_project/Constants/colors.dart';
 import 'package:lepo_project/Constants/images.dart';
-import 'package:lepo_project/Dashboard/Pages/home_screen.dart';
 import 'package:lepo_project/Dashboard/persistent_bottom_nav.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

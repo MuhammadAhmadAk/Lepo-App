@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lepo_project/Dashboard/Components/searchfield.dart';
-import 'package:lepo_project/Dashboard/Components/services.dart';
+import 'package:lepo_project/Dashboard/Pages/Order%20Directory/order_detail.dart';
 import 'package:lepo_project/Dashboard/persistent_bottom_nav.dart';
 import 'package:lepo_project/Dashboard/splash_screen.dart';
 
@@ -15,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lepo_project/Constants/colors.dart';
+import 'package:lepo_project/Dashboard/Pages/Chat_Directory/chat.dart';
 import 'package:lepo_project/Dashboard/Pages/home_screen.dart';
-import 'package:lepo_project/Dashboard/Pages/order_screen.dart';
+import 'package:lepo_project/Dashboard/Pages/Order%20Directory/order_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class PersistentNavBar extends StatefulWidget {
@@ -18,7 +19,7 @@ class _PersistentNavBarState extends State<PersistentNavBar> {
     return [
       const HomeScreen(),
       const OrderScreen(),
-      const Text("3"),
+      const ChatScreen(),
       const Text("4"),
     ];
   }
@@ -56,7 +57,7 @@ class _PersistentNavBarState extends State<PersistentNavBar> {
         opacity: 0.0,
       ),
       PersistentBottomNavBarItem(
-          title: "Message",
+          title: "Chat",
           icon: const Icon(
             Icons.message,
             color: whiteColor,
@@ -88,8 +89,8 @@ class _PersistentNavBarState extends State<PersistentNavBar> {
 
   @override
   Widget build(BuildContext context) {
-    double h = MediaQuery.of(context).size.height;
-    double w = MediaQuery.of(context).size.width;
+    // double h = MediaQuery.of(context).size.height;
+    // double w = MediaQuery.of(context).size.width;
     return PersistentTabView(
       context,
       controller: controller,

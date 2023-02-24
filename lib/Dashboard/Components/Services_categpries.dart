@@ -1,5 +1,4 @@
 
-
 import 'package:flutter/material.dart';
 
 import '../../Constants/colors.dart';
@@ -25,7 +24,7 @@ class ServicesCategories extends StatelessWidget {
             SizedBox(
               height: h * 0.013,
             ),
-            Text("$title",style: TextStyle(color: whiteColor,fontSize: 12),),
+            Text("$title",style: const TextStyle(color: whiteColor,fontSize: 12),),
             SizedBox(
               height: h * 0.02,
             ),

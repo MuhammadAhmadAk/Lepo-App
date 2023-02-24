@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lepo_project/Constants/colors.dart';
-import 'package:lepo_project/Constants/images.dart';
 
 class SearchFieldWidget extends StatefulWidget {
   const SearchFieldWidget({super.key});
@@ -21,7 +20,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
             height: h * 0.058,
             width: w * 0.9,
             decoration: BoxDecoration(
-                color: Color(0xfff2f3f3),
+                color: const Color(0xfff2f3f3),
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: const [BoxShadow(color: Colors.black, blurRadius: 3.0)]),
             child: Row(
@@ -30,10 +29,10 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
                   child: TextFormField(
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(10),
+                        contentPadding: const EdgeInsets.all(10),
                         hintText: "Search for Services.......",
-                        hintStyle: TextStyle(fontSize: 14, color: Colors.grey),
-                        fillColor: Color(0xfff2f3f3),
+                        hintStyle: const TextStyle(fontSize: 14, color: Colors.grey),
+                        fillColor: const Color(0xfff2f3f3),
                         prefixIcon: const Icon(
                           Icons.search,
                           color: appcolor,
@@ -56,7 +55,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
                     height: 35,
                     width: 80,
                     decoration: BoxDecoration(
-                        color: Color(0xfff2f3f3),
+                        color: const Color(0xfff2f3f3),
                         borderRadius: BorderRadius.circular(4.0),
                         boxShadow: [
                           BoxShadow(

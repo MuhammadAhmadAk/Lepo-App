@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lepo_project/Constants/colors.dart';
 import 'package:lepo_project/Constants/fonts.dart';
-import 'package:lepo_project/Constants/images.dart';
 import 'package:lepo_project/Dashboard/Components/custom_button.dart';
 
 class ServicesWidget extends StatelessWidget {
