@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lepo_project/Dashboard/Pages/Order%20Directory/order_detail.dart';
+import 'package:lepo_project/Dashboard/Pages/CheckOut_Directory/checkout.dart';
 import 'package:lepo_project/Dashboard/persistent_bottom_nav.dart';
-import 'package:lepo_project/Dashboard/splash_screen.dart';
+
+import 'Dashboard/Pages/Account_Directory/Profile_Directory/profile_Review.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PersistentNavBar(),
+      home: const CheckoutScreen(),
     );
   }
 }

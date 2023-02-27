@@ -1,7 +1,6 @@
+
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lepo_project/Constants/colors.dart';
-import 'package:lepo_project/Constants/images.dart';
 import 'package:lepo_project/Dashboard/Components/appbar.dart';
 import 'package:lepo_project/Dashboard/Components/chatlist.dart';
 import 'package:lepo_project/Dashboard/Components/online_chats.dart';
@@ -28,11 +27,10 @@ class _ChatScreenState extends State<ChatScreen> {
               height: 215,
               child: Column(
                 children: const [
-                  AppbarWidget(title: "Chat",),
+                  AppbarWidget(title: "Chat",color: appcolor,buttonColor: appcolor,),
                   SizedBox(height: 10,),
                   SimpleSearchField(),
                   SizedBox(height: 15,),
-
                   Expanded(
                     flex: 1,
                       child: OnlineChat())
@@ -40,10 +38,10 @@ class _ChatScreenState extends State<ChatScreen> {
 
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-Expanded(child: ChatListView())
+const Expanded(child: ChatListView())
 
           ],
         ),

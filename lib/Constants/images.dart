@@ -12,6 +12,9 @@ const icFilter = "assets/icons/filter.png";
 const icMedicalService = "assets/icons/Medical-service.png";
 const icConstruction = "assets/icons/construction.png";
 const icClipPin = "assets/icons/clip.png";
+const icPaypal = "assets/icons/paypal.png";
+const icDollar = "assets/icons/dollar.png";
+const icRazorPay = "assets/icons/razorpay.png";
 
 //Home Page image
 const imgWetFloor = "assets/images/wet-floor.png";

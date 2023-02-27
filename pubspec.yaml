@@ -40,7 +40,7 @@ dependencies:
   flutter_image_slider: ^0.0.2
   flutter_custom_carousel_slider: ^1.2.0
   persistent_bottom_nav_bar: ^5.0.2
-
+  flutter_rating_bar: ^4.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -6,6 +6,8 @@ import 'package:lepo_project/Dashboard/Pages/home_screen.dart';
 import 'package:lepo_project/Dashboard/Pages/Order%20Directory/order_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
+import 'Pages/Account_Directory/account.dart';
+
 class PersistentNavBar extends StatefulWidget {
   const PersistentNavBar({super.key});
 
@@ -20,8 +22,7 @@ class _PersistentNavBarState extends State<PersistentNavBar> {
       const HomeScreen(),
       const OrderScreen(),
       const ChatScreen(),
-      const Text("4"),
-    ];
+      const AccountScreen()    ];
   }
 
   List<PersistentBottomNavBarItem> navbarItems() {

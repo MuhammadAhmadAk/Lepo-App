@@ -5,8 +5,12 @@ import '../../Constants/colors.dart';
 class AppbarWidget extends StatelessWidget {
   final String? title;
   final VoidCallback? onTap;
-  const AppbarWidget({Key? key, this.title, this.onTap}) : super(key: key);
+  final Color? color;
+  final Color? buttonColor;
+  final Color? iconColor;
 
+
+  const AppbarWidget({Key? key, this.title, this.onTap, this.color, this.buttonColor, this.iconColor,}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return   Padding(
@@ -18,14 +22,14 @@ class AppbarWidget extends StatelessWidget {
               height: 35,
               width: 35,
               decoration: BoxDecoration(
-                  color: appcolor,
+                  color: buttonColor??Colors.blue,
                   borderRadius: BorderRadius.circular(10)),
               child: InkWell(
                 onTap: onTap,
                 child: Icon(
                   FontAwesomeIcons.arrowLeft,
                   size: 18,
-                  color: whiteColor,
+                  color: iconColor??Colors.white,
                 ),
               )),
            Text(
@@ -33,7 +37,7 @@ class AppbarWidget extends StatelessWidget {
             style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w600,
-                color: appcolor),
+                color: color??Colors.white),
           ),
           Container()
         ],
