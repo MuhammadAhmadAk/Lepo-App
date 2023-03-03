@@ -67,36 +67,6 @@ class _OrderScreenState extends State<OrderScreen> {
                       ],
                     ),
                   ),
-                  const Tab(
-                    child: Text(
-                      "Orders",
-                      style: TextStyle(fontSize: 15),
-                    ),
-                  ),
-                  const Tab(
-                    child: Text(
-                      "Bookings",
-                      style: TextStyle(fontSize: 15),
-                    ),
-                  ),
-                  const Tab(
-                    child: Text(
-                      "Services",
-                      style: TextStyle(fontSize: 15),
-                    ),
-                  ),
-                  const Tab(
-                    child: Text(
-                      "Orders",
-                      style: TextStyle(fontSize: 15),
-                    ),
-                  ),
-                  const Tab(
-                    child: Text(
-                      "Earning",
-                      style: TextStyle(fontSize: 15),
-                    ),
-                  )
                 ]),
             const SizedBox(
               height: 10,

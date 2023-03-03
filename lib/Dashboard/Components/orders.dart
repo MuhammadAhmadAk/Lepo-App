@@ -12,6 +12,7 @@ class OrderWidget extends StatelessWidget {
   final int? review;
   final double? price;
   final VoidCallback? onpressed;
+  final String? buttonText;
 
   const OrderWidget(
       {super.key,
@@ -22,6 +23,7 @@ class OrderWidget extends StatelessWidget {
       required this.rating,
       required this.price,
       required this.review,
+      this.buttonText,
       this.onpressed});
   @override
   Widget build(BuildContext context) {
@@ -162,15 +164,17 @@ class OrderWidget extends StatelessWidget {
                         const SizedBox(
                           width: 8,
                         ),
-                        CustombuttonWidget(
-                          onPressed: () {},
-                          buttonBackgroundColor: appcolor,
-                          buttonHeight: h * 0.035,
-                          buttonWidth: 85,
-                          buttonborderRadius: 20,
-                          child: const Text(
-                            "In Progress",
-                            style: TextStyle(fontSize: 9),
+                        Expanded(
+                          child: CustombuttonWidget(
+                            onPressed: () {},
+                            buttonBackgroundColor: appcolor,
+                            buttonHeight: h * 0.035,
+                            buttonWidth: 89,
+                            buttonborderRadius: 20,
+                            child:  Text(
+                              buttonText??"In Progress",
+                              style: TextStyle(fontSize: 10),
+                            ),
                           ),
                         )
                       ],

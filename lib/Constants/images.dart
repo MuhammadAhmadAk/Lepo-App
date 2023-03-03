@@ -15,6 +15,7 @@ const icClipPin = "assets/icons/clip.png";
 const icPaypal = "assets/icons/paypal.png";
 const icDollar = "assets/icons/dollar.png";
 const icRazorPay = "assets/icons/razorpay.png";
+const imgMap = "assets/images/map.png";
 
 //Home Page image
 const imgWetFloor = "assets/images/wet-floor.png";

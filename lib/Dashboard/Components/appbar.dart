@@ -10,7 +10,7 @@ class AppbarWidget extends StatelessWidget {
   final Color? iconColor;
 
 
-  const AppbarWidget({Key? key, this.title, this.onTap, this.color, this.buttonColor, this.iconColor,}) : super(key: key);
+  const AppbarWidget({Key? key, required this.title, this.onTap, required this.color, required this.buttonColor, this.iconColor,}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return   Padding(
