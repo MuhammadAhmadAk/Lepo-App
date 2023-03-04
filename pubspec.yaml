@@ -44,6 +44,7 @@ dependencies:
   syncfusion_flutter_charts: ^20.4.52
   bubble: ^1.2.1
   table_calendar: ^3.0.9
+  pinput: ^2.2.31
 dev_dependencies:
   flutter_test:
     sdk: flutter

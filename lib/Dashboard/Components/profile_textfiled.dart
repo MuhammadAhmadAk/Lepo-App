@@ -24,24 +24,24 @@ class ProfileTextField extends StatelessWidget {
         children: [
           Text(
             label!,
-            style: TextStyle(fontSize: 15, color: Colors.grey),
+            style: const TextStyle(fontSize: 15, color: Colors.grey),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
             labelInfo!,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 18, color: Colors.grey, fontWeight: FontWeight.bold),
           ),
           TextField(
             keyboardType: inputType,
             controller: controller,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           )
         ],

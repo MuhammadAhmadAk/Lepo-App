@@ -16,6 +16,12 @@ const icPaypal = "assets/icons/paypal.png";
 const icDollar = "assets/icons/dollar.png";
 const icRazorPay = "assets/icons/razorpay.png";
 const imgMap = "assets/images/map.png";
+const icGoogle = "assets/icons/Google.png";
+const icFacebook = "assets/icons/facebook.png";
+const icApple = "assets/icons/apple.png";
+const tabletImg = "assets/icons/Tablet.png";
+
+
 
 //Home Page image
 const imgWetFloor = "assets/images/wet-floor.png";
@@ -24,4 +30,5 @@ const carService = "assets/images/carService.jpg";
 const cleaningService = "assets/images/cleaning-service.jpg";
 const refinishing = "assets/images/refinishig.jpg";
 const profileImg = "assets/images/profileimage.jpg";
+
 
